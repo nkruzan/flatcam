@@ -6204,19 +6204,19 @@ class App(QtCore.QObject):
                 self.ui.popmenu_move.setDisabled(True)
 
     @property
-    def mouse_click_pos(self) -> list[float]:
+    def mouse_click_pos(self):
         return [self._mouse_click_pos[0], self._mouse_click_pos[1]]
 
     @mouse_click_pos.setter
-    def mouse_click_pos(self, m_pos: Union[list[float], tuple[float]]):
+    def mouse_click_pos(self, m_pos):
         self._mouse_click_pos = m_pos
 
     @property
-    def mouse_pos(self) -> list[float]:
+    def mouse_pos(self):
         return [self._mouse_pos[0], self._mouse_pos[1]]
 
     @mouse_pos.setter
-    def mouse_pos(self, m_pos: Union[list[float], tuple[float]]):
+    def mouse_pos(self, m_pos):
         self._mouse_pos = m_pos
 
     def selection_area_handler(self, start_pos, end_pos, sel_type):

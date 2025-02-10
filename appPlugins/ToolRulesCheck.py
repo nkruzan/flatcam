@@ -262,7 +262,7 @@ class RulesCheck(AppTool):
         return rule_title, violations
 
     @staticmethod
-    def check_gerber_clearance(gerber_list: list[GerberObject], size, rule):
+    def check_gerber_clearance(gerber_list, size, rule):
         # log.debug("RulesCheck.check_gerber_clearance()")
         rule_title = rule
 

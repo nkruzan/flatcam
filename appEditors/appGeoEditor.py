@@ -2912,7 +2912,7 @@ class DrawTool(object):
         self.points = []
         self.geometry = None  # DrawToolShape or None
 
-    def click(self, point: Union[list[float, float], tuple[float, float]]):
+    def click(self, point):
         """
         :param point: [x, y] Coordinate pair.
         """
